@@ -84,11 +84,18 @@ header .container, section .container {
 }
 
 .product img {
+    margin-top: 30px;
     max-width: 100%;
 }
 
-.product h4 {
+.product p {
+    margin-top: 10px;
     color: var(--light-white);
+}
+
+.product h4 {
+    
+    color: var(--white);
 }
 
 
@@ -157,6 +164,7 @@ section h2 {
         margin-bottom: 32px;
     }
 
+
     aside {
         padding-left: 0;
     }
@@ -214,6 +222,10 @@ section h2 {
     .newProducts {
         grid-template-columns: repeat(2, 49%);
     }
+
+    .newProducts {
+        margin-bottom: 120px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -221,6 +233,7 @@ section h2 {
     .menuButton {
         display: none;
     }
+
 }
 
 .searchButton {
@@ -247,5 +260,33 @@ section h2 {
 
 } 
 
+button {
+    display: inline-block;
+    margin-top: 1rem;
+    border: 1px;
+    border-radius: 8px;
+    background-color: var(--light-bg);
+    color: var(--white);
+    font-weight: bold;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--light-bg);
+}
 
 
+.footer .credit {
+    margin-top: 5rem;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    border-top: 0.1rem solid var(--light-white);
+    color: var(--light-white);
+}
